@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.generaltemplate.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="169.0" layoutX="14.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+      <Button layoutX="230.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleMathWith1Num" text="Enter" textFill="#d31414" />
+      <TextField fx:id="txtNumber" layoutX="177.0" layoutY="112.0" prefHeight="25.0" prefWidth="158.0" promptText="input number" />
+      <TextField fx:id="txtNumMults" layoutX="177.0" layoutY="78.0" prefHeight="25.0" prefWidth="158.0" promptText="input # of Mults(Mults of #)" />
+      <Label layoutX="114.0" layoutY="40.0" text="Math with 1 Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstMathWith1NumberOutput" layoutX="22.0" layoutY="79.0" prefHeight="119.0" prefWidth="111.0" />
+      <Label layoutX="41.0" layoutY="61.0" text="Select Output" />
+      <Button layoutX="345.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLoad" text="Start" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="169.0" layoutX="383.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+      <Button layoutX="556.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleMathWithAandB" text="Enter" textFill="#d31414" />
+      <TextField fx:id="txtNumB" layoutX="515.0" layoutY="108.0" promptText="input # b" />
+      <TextField fx:id="txtNumA" layoutX="515.0" layoutY="78.0" promptText="input # a" />
+      <Label layoutX="461.0" layoutY="40.0" text="Math with number a and b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstMathWith2NumberOutput" layoutX="390.0" layoutY="79.0" prefHeight="119.0" prefWidth="111.0" />
+      <Label layoutX="409.0" layoutY="61.0" text="Select Output" />
+      <TextField fx:id="txtAnswerTypeAB" layoutX="515.0" layoutY="151.0" promptText="input # answer type (a/b)" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="169.0" layoutX="14.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+      <Label layoutX="152.0" layoutY="230.0" text="Cypher">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="243.0" text="Select Output" />
+      <ListView fx:id="lstCypher" layoutX="22.0" layoutY="260.0" prefHeight="119.0" prefWidth="111.0" />
+      <Button layoutX="230.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleCypher" text="Enter" textFill="#d31414" />
+      <TextField fx:id="txtInputString" layoutX="178.0" layoutY="260.0" promptText="input String" />
+      <TextField fx:id="txtShiftNum" layoutX="177.0" layoutY="294.0" promptText="input Shift (Caesar)" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="213.0" layoutX="383.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+      <Label layoutX="492.0" layoutY="230.0" text="Roll x dice y times">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstRollDiceOutputs" layoutX="390.0" layoutY="260.0" prefHeight="160.0" prefWidth="158.0" />
+      <Label layoutX="409.0" layoutY="243.0" text="Select Output" />
+      <TextField fx:id="txtNumFaces" layoutX="554.0" layoutY="260.0" promptText="input # faces" />
+      <TextField fx:id="txtNumDice" layoutX="555.0" layoutY="288.0" promptText="input # Dice" />
+      <TextField fx:id="txtNumRolls" layoutX="556.0" layoutY="315.0" promptText="input # Rolls" />
+      <Label layoutX="516.0" layoutY="134.0" text="(Decimal, Proper, Improper)" />
+      <Button layoutX="607.0" layoutY="401.0" mnemonicParsing="false" onAction="#handleRollDice" text="Enter" textFill="#d31414" />
+      <TextField fx:id="txtProbWeighted" layoutX="554.0" layoutY="342.0" prefHeight="25.0" prefWidth="171.0" promptText="input probablitiy of weighted" />
+      <TextField fx:id="txtFaceWeighted" layoutX="555.0" layoutY="367.0" prefHeight="25.0" prefWidth="147.0" promptText="input Weighted #" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="169.0" layoutX="15.0" layoutY="407.0" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+      <Label layoutX="30.0" layoutY="435.0" text="Select Output" />
+      <ListView fx:id="lstWordSearch" layoutX="22.0" layoutY="452.0" prefHeight="119.0" prefWidth="111.0" />
+      <Label layoutX="110.0" layoutY="416.0" text="Array Word Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtInputWord" layoutX="170.0" layoutY="452.0" onKeyReleased="#handleSearchWord" promptText="input Word" />
+      <Button layoutX="222.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleWordSearch" text="Enter" textFill="#d31414" />
+   </children>
+</AnchorPane>
